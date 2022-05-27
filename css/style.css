@@ -61,12 +61,27 @@ body {
 
 .modal-content {
     background-color:;
-    margin: 20% auto;
+    /* margin: 20% auto; */
     padding: 20px;
     width: 60%;
+        /* height: 350px; */
+        /* width: 550px; */
+        margin: 150px auto;
     color: white;
     text-align: center;
     font-size: 25px;
+}
+
+.closeBtn {
+    color: #ccc;
+    float: right;
+    font-size: 30px;
+}
+
+.closeBtn:hover, .closeBtn:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 #resumeImg {
@@ -75,7 +90,6 @@ body {
 
 .contact-page {
     display: none;
-    background-color: gray;
     position: fixed;
     z-index: 1;
     left: 0;
@@ -83,17 +97,20 @@ body {
     height: 100%;
     width: 100%;
     overflow: auto;
-    background-color: rgba (0,0,0,0.5);
+    background-color: rgba(0,0,0,.9);
 }
 
 .contact-modal {
-    margin: 20% auto;
-    padding: 20px;
-    width: 60%;
-    color: black;
+    /* margin-top: 150px;
+    margin-left: 380px; */
+    height: 350px;
+    width: 550px;
+    margin: 150px auto;
+    /* height: 100px;
+    width: 50%; */
+    color: white;
     font-size: 25px;
 }
-
 
 .contact-modal h2 {
     font-size: 40px;
@@ -123,13 +140,13 @@ body {
     color: gray;
 }
 
-.closeBtn {
+.closeBtn2 {
     color: #ccc;
     float: right;
     font-size: 30px;
 }
 
-.closeBtn:hover, .closeBtn:focus {
+.closeBtn2:hover, .closeBtn2:focus {
     color: white;
     text-decoration: none;
     cursor: pointer;
