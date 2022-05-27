@@ -15,66 +15,87 @@
 		<title>brian-choi-portfolio</title>
 	</head>
 	<body>
-		<div id="nav-bar">
-			<ul class="top-nav">
-				<li><a class="nav-links" href="#">ABOUT ME</a></li>
-				<li><a class="nav-links" href="#">PROJECTS</a></li>
-				<li><a id="modalBtn" class="button" href="#">RESUME</a></li>
-				<li><a class="nav-links" href="#">CONTACT ME</a></li>
-			</ul>
-		</div>
-		<div id="resumeModal" class="modal">
-			<div class="modal-content">
-				<span class="closeBtn">&times;</span>
-				<h2>Resume</h2>
-				<img id="resumeImg" src="pictures/resume.png" alt="copy of my resume" />
+		<div class="container">
+			<!--------------- TOP NAVIGATION BAR --------------->
+			<div id="nav-bar">
+				<ul class="top-nav">
+					<li><a class="nav-links" href="#">ABOUT ME</a></li>
+					<li><a class="nav-links" href="#">PROJECTS</a></li>
+					<li><a id="modalBtn" class="button" href="#">RESUME</a></li>
+					<li><a class="nav-links" href="#">CONTACT ME</a></li>
+				</ul>
+			</div>
+			<!------------------- RESUME MODAL -------------------->
+			<div id="resumeModal" class="modal">
+				<div class="modal-content">
+					<span class="closeBtn">&times;</span>
+					<img id="resumeImg" src="pictures/resume.png" alt="copy of my resume" />
+				</div>
+			</div>
+			<!--------------- CAROUSEL CONTAINER ---------------->
+			<div class="carousel-container">
+				<div class="carousel-button prev">
+					<span class="lnr lnr-chevron-left"></span>
+				</div>
+				<div class="web-pages">
+			<!--------------- HOME PAGE ----------------->
+					<div id="webpage" class="home-page">
+						<section class="img-me">
+							<img class="pic-me" src="/pictures/IMG_4959_2.jpg" alt="picture of me" />
+						</section>
+						<section class="aboutme">
+							<p>
+                			Hey, I'm Brian!
+							<br>Currently based in Los Angeles, CA</br> 
+							I went from full-time nursing to software engineer student
+							<br>Developing skills necessary to become a pioneer to the future of software engineering</br>
+							</p>
+						</section>
+					</div>
+			<!--------------- PROJECTS PAGE --------------->
+					<div id="webpage" class="project-page">
+						<!-- <p>hello</p> -->
+					</div>
+			<!--------------- CONTACT ME PAGE --------------->
+					<div id="webpage" class="contact-page">
+						<div class="contact-modal">
+							<span class="closeBtn">&times;</span>
+							<h2>Let's chat.</h2>
+							<p>Want to get in touch or have any questions? Send me a message!</p>
+							<input type="text" class="info-box" placeholder="First Name">
+							<input type="text" class="info-box" placeholder="Last Name">
+							<input type="text" id="email-bar" class="info-box" placeholder="Email Address">
+							<textarea class="info-box" cols="87" rows="10" placeholder="What do you want from me?!"></textarea>
+							<button class="submit-btn">Submit!</button>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-button next">
+					<span class="lnr lnr-cheveron-right"></span>
+				</div>
+			</div>		
+			<!-----------  CONTACT & SOCIAL MEDIA ICONS ---------->
+			<div class="contact-nav">
+				<ul class="bottom-nav">
+					<li>
+						<a class="social-icon" href="https://github.com/brianchoi93?tab=repositories" target="_blank">
+						<ion-icon name="logo-github"></ion-icon>
+					</a>
+					</li>
+					<li>
+						<a class="social-icon" href="https://www.linkedin.com/in/byoungkchoi">
+						<ion-icon name="logo-linkedin"></ion-icon>
+						</a>
+					</li>
+					<li>
+						<a class="social-icon" href="mailto:brianchoi93@gmail.com">
+						<ion-icon name="mail-outline"></ion-icon>
+					</a>
+					</li>
+				</ul>
 			</div>
 		</div>
-		<div id="home-page">
-			<section class="img-me">
-				<img class="pic-me" src="/pictures/IMG_4959_2.jpg" alt="picture of me" />
-			</section>
-			<section class="aboutme">
-				<p>
-                Hey, I'm Brian!
-				<br>Currently based in Los Angeles, CA</br> 
-				I went from nursing to software engineer student
-				<br>Developing skills necessary to become a pioneer to the future of software engineering</br>
-				</p>
-			</section>
-		</div>
-			<h2>Projects</h2>
-            <!--carousel contianer-->
-            <div class="carousel-container">
-                <div class="carousel-button prev">
-                    <span class="lnr-chevron-left"></span>
-                </div>
-                <div class="carousel images">
-                </div>
-                <div class="carousel-button next">
-                    <span class="lnr-chevron-right"></span>
-                </div>
-            </div>
-		</div>
-		<div id="contact-nav">
-			<ul class="bottom-nav">
-				<li>
-					<a class="social-icon" href="https://github.com/brianchoi93?tab=repositories" target="_blank">
-					<ion-icon name="logo-github"></ion-icon>
-					</a>
-				</li>
-				<li>
-					<a class="social-icon" href="https://www.linkedin.com/in/byoungkchoi">
-					<ion-icon name="logo-linkedin"></ion-icon>
-					</a>
-				</li>
-				<li>
-					<a class="social-icon" href="mailto:brianchoi93@gmail.com">
-					<ion-icon name="mail-outline"></ion-icon>
-					</a>
-				</li>
-			</ul>
-		</div>
+		<!--------------- SCRIPTS --------------->
 		<script src="/js/script.js"></script>
 		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
