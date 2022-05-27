@@ -19,9 +19,16 @@
 			<ul class="top-nav">
 				<li><a class="nav-links" href="#">ABOUT ME</a></li>
 				<li><a class="nav-links" href="#">PROJECTS</a></li>
-				<li><a class="nav-links" href="#">RESUME</a></li>
+				<li><a id="modalBtn" class="button" href="#">RESUME</a></li>
 				<li><a class="nav-links" href="#">CONTACT ME</a></li>
 			</ul>
+		</div>
+		<div id="resumeModal" class="modal">
+			<div class="modal-content">
+				<span class="closeBtn">&times;</span>
+				<h2>Resume</h2>
+				<img id="resumeImg" src="pictures/resume.png" alt="copy of my resume" />
+			</div>
 		</div>
 		<div id="home-page">
 			<section class="img-me">
@@ -49,11 +56,6 @@
                 </div>
             </div>
 		</div>
-		<div id="resume-modal">
-			<a id="close" href="#">Close</a>
-			<h2>Resume</h2>
-			<!-- <img id="resumeImg" src="pictures/resume.png" alt="copy of my resume" /> -->
-		</div>
 		<div id="contact-nav">
 			<ul class="bottom-nav">
 				<li>
@@ -73,6 +75,7 @@
 				</li>
 			</ul>
 		</div>
+		<script src="/js/script.js"></script>
 		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 	</body>
