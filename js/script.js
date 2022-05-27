@@ -16,7 +16,6 @@ let closeBtn = document.querySelector('.closeBtn');
 
 modalBtn.addEventListener('click', openModal);
 closeBtn.addEventListener('click', closeModal);
-window.addEventListener('click', clickOutside);
 
 function openModal() {
 	// console.log(it works!);
@@ -25,10 +24,4 @@ function openModal() {
 
 function closeModal() {
 	modal.style.display = 'none';
-}
-
-function clickOutside(close) {
-	if (close.target == modal) {
-		modal.style.display = 'none';
-	}
 }
