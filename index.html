@@ -15,14 +15,15 @@
 		<title>brian-choi-portfolio</title>
 	</head>
 	<body>
+		<button onclick="darkMode()">Dark Mode</button>
 		<div class="container">
 			<!--------------- TOP NAVIGATION BAR --------------->
 			<div id="nav-bar">
 				<ul class="top-nav">
-					<li><a class="nav-links" href="#">ABOUT ME</a></li>
-					<li><a class="nav-links" href="#">PROJECTS</a></li>
-					<li><a id="modalBtn" class="button" href="#">RESUME</a></li>
-					<li><a id="contactLink" class="nav-links" href="#">CONTACT ME</a></li>
+					<li><a onclick ="darkMode()" class="nav-links" href="#">ABOUT ME</a></li>
+					<li><a onclick ="darkMode()" class="nav-links" href="#">PROJECTS</a></li>
+					<li><a onclick ="darkMode()" id="modalBtn" class="button nav-links" href="#">RESUME</a></li>
+					<li><a onclick ="darkMode()" id="contactLink" class="nav-links" href="#">CONTACT ME</a></li>
 				</ul>
 			</div>
 			<!------------------- RESUME MODAL -------------------->
@@ -66,7 +67,7 @@
 							<input type="text" class="info-box" placeholder="Last Name">
 							<input type="text" id="email-bar" class="info-box" placeholder="Email Address">
 							<textarea class="info-box" cols="68" rows="10" placeholder="What do you want from me?!"></textarea>
-							<button class="submit-btn">Submit!</button>
+							<button type="submit" class="submit-btn">Submit!</button>
 						</div>
 					</div>
 				</div>

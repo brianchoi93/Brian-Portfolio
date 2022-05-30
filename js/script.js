@@ -41,3 +41,16 @@ function openContact() {
 function closeContact() {
 	modal2.style.display = 'none';
 }
+
+//===== CONTACT SUBMIT FORM =====\\
+
+//===== DARK MODE FUNCTION =====\\
+
+function darkMode() {
+	let element = document.body;
+	let element2 = document.getElementByClass('nav-links');
+	element.classList.toggle('dark-mode');
+	element2.classList.toggle('dark-mode');
+	// let darkModeEl = document.querySelector('#dark-mode');
+	// darkModeEl.classList.toggle('dark-mode');
+}
