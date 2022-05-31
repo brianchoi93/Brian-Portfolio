@@ -26,6 +26,33 @@ function closeModal() {
 	modal.style.display = 'none';
 }
 
+//===== PROJECT CAROUSEL =====\\
+let currentImgIndex = 0;
+let previousImgIndex = 0;
+const images = document.querySelectorAll('.images');
+
+const next = document.querySelector('.next');
+next.addEventListener('click', function () {
+	let previousImgIndex = currentImgIndex;
+	currentImgIndex = currentImgIndex + 1;
+	if (currentImgIndex >= images.length) {
+		currentImgIndex = 0;
+	}
+	images[previousImgIndex].style.display = 'none';
+	images[currentImgIndex].style.display = 'block';
+});
+
+const prev = document.querySelector('.prev');
+prev.addEventListener('click', function () {
+	if (currentImgIndex < 0) {
+		currentImgIndex = images.length - 1;
+	} else if (currentImgIndex > 0) {
+		currentImgIndex = 3;
+	}
+	images[previousImgIndex].style.display = 'none';
+	images[currentImgIndex].style.display = 'block';
+});
+
 //===== CONTACT MODAL =====\\
 let modal2 = document.querySelector('.contact-page');
 let modalBtn2 = document.querySelector('#contactLink');
@@ -48,9 +75,9 @@ function closeContact() {
 
 function darkMode() {
 	let element = document.body;
-	let element2 = document.getElementByClass('nav-links');
+	// let element2 = document.getElementByClass('nav-links');
 	element.classList.toggle('dark-mode');
-	element2.classList.toggle('dark-mode');
+	// element2.classList.toggle('dark-mode');
 	// let darkModeEl = document.querySelector('#dark-mode');
 	// darkModeEl.classList.toggle('dark-mode');
 }
