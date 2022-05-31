@@ -81,14 +81,14 @@ function closeContact() {
 }
 
 //===== CONTACT SUBMIT FORM =====\\
+let firstName = document.querySelector('#first-name');
+let lastName = document.querySelector('#last-name');
+let email = document.querySelector('#email');
+let message = document.querySelector('#textarea');
 
-//===== DARK MODE FUNCTION =====\\
-
-function darkMode() {
-	let element = document.body;
-	// let element2 = document.getElementByClass('nav-links');
-	element.classList.toggle('dark-mode');
-	// element2.classList.toggle('dark-mode');
-	// let darkModeEl = document.querySelector('#dark-mode');
-	// darkModeEl.classList.toggle('dark-mode');
-}
+document.querySelector('#contactme').addEventListener('submit', function () {
+	console.log(firstName.value);
+	console.log(lastName.value);
+	console.log(email.value);
+	console.log(message.value);
+});

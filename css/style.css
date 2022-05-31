@@ -5,34 +5,59 @@
 }
 
 body {
-    height: 50vh;
-    /* background-image: url("/pictures/yang-shuo-uYHYGgvkz_Y-unsplash.jpg");
-    overflow: hidden;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; */
+    height: 100vh;
     font-family: 'Bebas Neue', cursive;
     background-color: white;
-    /* padding: 25px; */
 }
 
+.home-page {
+    display: flex;
+    justify-content: center;
+    margin: 85px 60px;
+    padding: 25px 30px;
+    line-height: 1.3;
+}
 
+.pic-me {
+    width: auto;
+    height: 250px;
+    border-radius: 100%;
+    margin-right: 20px;
+    border: 3px solid black;
+}
+
+.aboutme {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.contact-nav {
+    display: flex;
+    justify-content: flex-end;
+}
 
 .top-nav {
     display: flex;
-    justify-content: flex-end;
-    flex-direction: row;
+    align-items: center;
+    height: 5%;
     gap: 50px;
     margin-top: 40px;
     margin-right: 40px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: black;
+    border-radius: 5px;
 }
 
 .nav-links {
     text-decoration: none;
     transition: color 0.2s;
     font-size: 20px;
-    color: black;
+    color: white;
+    padding: 10px;
 }
 
 .nav-links:hover {
@@ -43,7 +68,7 @@ body {
     text-decoration: none;
     transition: color 0.2s;
     font-size: 20px;
-    color: black
+    color: white;
 }
 
 .button:hover {
@@ -59,16 +84,13 @@ body {
     height: 100%;
     width: 100%;
     overflow: auto;
-    background-color: rgba(0,0,0,0.5)
+    background-color: rgba(0,0,0,0.9)
 }
 
 .modal-content {
     background-color:;
-    /* margin: 20% auto; */
     padding: 20px;
     width: 60%;
-        /* height: 350px; */
-        /* width: 550px; */
         margin: 150px auto;
     color: white;
     text-align: center;
@@ -125,7 +147,7 @@ body {
     margin: 5px;
 }
 
-#email-bar {
+#email {
     width: 248px;
 }
 
@@ -162,10 +184,10 @@ body {
     align-items: center;
 }
 
-.container h2 {
+.container a {
     font-weight: 800;
     font-size: 2.5em;
-    margin-top: 20%;
+    margin-top: 12%;
     padding-bottom: 20px;
 } 
 
@@ -173,6 +195,7 @@ body {
     display: flex;
     width: 70%;
     justify-content: space-around;
+    padding-bottom: 100px;
 }
 
 .project-images {
@@ -208,39 +231,13 @@ body {
     background: gray;
 }
 
-.home-page {
-    display: flex;
-    justify-content: center;
-    margin: 85px 60px;
-    padding: 25px 30px;
-    line-height: 1.3;
-}
-
-.pic-me {
-    width: auto;
-    height: 250px;
-    border-radius: 100%;
-    margin-right: 20px;
-    border: 3px solid black;
-}
-
-.aboutme {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-}
-
-.contact-nav {
-    display: flex;
-    justify-content: flex-end;
-}
-
 .bottom-nav {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 20px;
     margin: 20px;
+    position: fixed;
+    bottom: 0;
 }
 
 .social-icon{
