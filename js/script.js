@@ -43,15 +43,26 @@ next.addEventListener('click', function () {
 });
 
 const prev = document.querySelector('.prev');
-prev.addEventListener('click', function () {
+prev.addEventListener('click', () => {
+	let previousImgIndex = currentImgIndex;
+	currentImgIndex = currentImgIndex - 1;
 	if (currentImgIndex < 0) {
-		currentImgIndex = images.length - 1;
-	} else if (currentImgIndex > 0) {
-		currentImgIndex = 3;
+		currentImgIndex = 2;
 	}
 	images[previousImgIndex].style.display = 'none';
 	images[currentImgIndex].style.display = 'block';
 });
+// const prev = document.querySelector('.prev');
+// prev.addEventListener('click', function () {
+// 	let currentImgIndex = previousImgIndex;
+// 	if (currentImgIndex > 0) {
+// 		currentImgIndex = images.length--;
+// 	} else {
+// 		currentImgIndex = 2;
+// 	}
+// 	images[previousImgIndex].style.display = 'none';
+// 	images[currentImgIndex].style.display = 'block';
+// });
 
 //===== CONTACT MODAL =====\\
 let modal2 = document.querySelector('.contact-page');
