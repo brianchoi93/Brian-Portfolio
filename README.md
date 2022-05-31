@@ -24,9 +24,9 @@
 
 ## WIREFRAMES
 
-![Homepage](Screen Shot 2022-05-25 at 11.53.22 AM.png)
-![Project](Screen Shot 2022-05-25 at 11.53.32 AM.png)
-![Resume](Screen Shot 2022-05-25 at 11.53.43 AM.png)
+![Homepage](https://github.com/brianchoi93/Brian-Portfolio/blob/bc/dev/wireframes/Screen%20Shot%202022-05-25%20at%2011.53.22%20AM.png)
+![Project](https://github.com/brianchoi93/Brian-Portfolio/blob/bc/dev/wireframes/Screen%20Shot%202022-05-25%20at%2011.53.32%20AM.png)
+![Resume](https://github.com/brianchoi93/Brian-Portfolio/blob/bc/dev/wireframes/Screen%20Shot%202022-05-25%20at%2011.53.43%20AM.png)
 
 ## MAJOR HURDLES
 
