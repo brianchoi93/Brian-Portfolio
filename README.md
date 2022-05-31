@@ -24,6 +24,10 @@
 
 ## WIREFRAMES
 
+!(Screen Shot 2022-05-25 at 11.53.22 AM.png)
+!(Screen Shot 2022-05-25 at 11.53.32 AM.png)
+!(Screen Shot 2022-05-25 at 11.53.43 AM.png)
+
 ## MAJOR HURDLES
 
 Let me start by saying that this entire project was a struggle itself. I have no background in software engineering/coding, so trying to make everything from scratch was extremely difficult...
