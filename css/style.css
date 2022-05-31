@@ -26,7 +26,7 @@ body {
     border: 3px solid black;
 }
 
-.aboutme {
+.homepage {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -178,6 +178,24 @@ body {
     border-radius: 10px;
 }
 
+.aboutme {
+    display: flex;
+    justify-content: center;
+}
+
+.aboutme h2 {
+    font-weight: 800;
+    font-size: 2.5em;
+    margin-top: 30%;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.aboutme p {
+    font-size: 20px;
+    text-align: center;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -187,9 +205,10 @@ body {
 .container a {
     font-weight: 800;
     font-size: 2.5em;
-    margin-top: 12%;
+    margin-top: 30%;
     padding-bottom: 20px;
 } 
+
 
 .carousel-container {
     display: flex;
