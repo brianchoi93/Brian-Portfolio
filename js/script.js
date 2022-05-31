@@ -91,4 +91,5 @@ document.querySelector('#contactme').addEventListener('submit', function () {
 	console.log(lastName.value);
 	console.log(email.value);
 	console.log(message.value);
+	alert('Message Sent!');
 });
