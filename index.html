@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&family=Bebas+Neue&family=Indie+Flower&display=swap"
+			rel="stylesheet"
+		/>
+		<title>brian-choi-portfolio</title>
+	</head>
+	<body>
+		<div id="nav-bar">
+			<h1>Brian Choi</h1>
+			<ul class="top-nav">
+				<li><a class="nav-links" href="#aboutme">ABOUT ME</a></li>
+				<li><a href="#project" class="nav-links">PROJECTS</a></li>
+				<li><a id="modalBtn" class="button nav-links" href="#">RESUME</a></li>
+				<li><a id="contactLink" class="nav-links" href="#">CONTACT ME</a></li>
+			</ul>
+		</div>
+		<div id="resumeModal" class="modal">
+			<div class="modal-content">
+				<span class="closeBtn">&times;</span>
+				<img id="resumeImg" src="pictures/resume.png" alt="copy of my resume" />
+			</div>
+		</div>
+		<section class="home-page">
+			<div class="img-me">
+				<img
+					class="pic-me"
+					src="/pictures/IMG_4959_2.jpg"
+					alt="picture of me"
+				/>
+			</div>
+		</section>
+		<section>
+			<div class="homepage">
+				<p>
+					Currently based in Los Angeles, CA
+					<br />I went from full-time nursing to software engineer student
+				</p>
+			</div>
+		</section>
+		<section class="aboutme">
+			<a id="aboutme">
+				<h2>ABOUT ME</h2>
+				<p>
+					Hi, I'm Brian! I was Born in South Korea and lived in So Cal for the
+					majority of my life.
+					<br />I went from working full-time as a nurse to software engineer
+					student. <br />With my background in nursing, I'm able to work with
+					others to tackle high-stress situations and complex problems. <br />In
+					my free time I enjoy playing games, strumming the guitar, and camping!
+				</p>
+			</a>
+		</section>
+		<section class="project-page container">
+			<a id="project">PROJECT</a>
+			<div class="carousel-container">
+				<div class="carousel-button prev">
+					<span class="lnr lrn-cheveron-left"></span>
+				</div>
+				<div class="project-images">
+					<img src="/pictures/PROJECTONE.png" alt="" class="images" />
+					<img src="/pictures/PROJECTTWO.png" alt="" class="images" />
+					<img src="/pictures/PROJECTTHREE.png" alt="" class="images" />
+				</div>
+				<div class="carousel-button next">
+					<span class="lnr lnr-cheveron-right"></span>
+				</div>
+			</div>
+		</section>
+		<div class="contact-page">
+			<div class="contact-modal">
+				<span class="closeBtn2">&times;</span>
+				<h2>Let's chat.</h2>
+				<p>Want to get in touch or have any questions? Send me a message!</p>
+				<form id="contactme">
+					<input
+						type="text"
+						id="first-name"
+						class="info-box"
+						placeholder="First Name"
+						required
+					/>
+					<input
+						type="text"
+						id="last-name"
+						class="info-box"
+						placeholder="Last Name"
+						required
+					/>
+					<input
+						type="email"
+						id="email"
+						class="info-box"
+						placeholder="Email Address"
+						required
+					/>
+					<textarea
+						id="textarea"
+						class="info-box"
+						cols="68"
+						rows="10"
+						placeholder="Your message"
+						required
+					></textarea>
+					<button type="submit" class="submit-btn">Submit!</button>
+				</form>
+			</div>
+		</div>
+		<div class="contact-nav">
+			<ul class="bottom-nav">
+				<li>
+					<a
+						class="social-icon"
+						href="https://github.com/brianchoi93?tab=repositories"
+						target="_blank"
+					>
+						<ion-icon name="logo-github"></ion-icon>
+					</a>
+				</li>
+				<li>
+					<a class="social-icon" href="https://www.linkedin.com/in/byoungkchoi">
+						<ion-icon name="logo-linkedin"></ion-icon>
+					</a>
+				</li>
+				<li>
+					<a class="social-icon" href="mailto:brianchoi93@gmail.com">
+						<ion-icon name="mail-outline"></ion-icon>
+					</a>
+				</li>
+			</ul>
+		</div>
+	
+		<script src="/js/script.js"></script>
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+		></script>
+	</body>
+</html>
