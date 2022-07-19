@@ -6,7 +6,7 @@
 
 ## INSTALLATION INSTRUCTIONS
 
-- Visit my website at https://brian-choi-ffbe60.netlify.app/!
+- Visit my website at https://bchoi.netlify.app!
 
 ## USER STORIES
 
